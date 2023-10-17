@@ -1,0 +1,210 @@
+.textPrincipal{
+    text-align: center;
+    color: #1C4C4E;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+.errorMessage{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+} */
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+  }
+
+.imgproduto{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+}
+.produtoInfoConteiner{
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    padding: 30px;
+    margin: 20px 20px 20px 20px;
+    border-radius: 20px;
+    width: 850px;
+}
+.produtoInfoConteiner h3{
+    color: #1C4C4E;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.item-top{
+    display: grid;
+    grid-template-rows: repeat(3, 50px); 
+    margin-left: 30px;
+}
+.item-top p{
+    font-size: small;
+    width: 550px;
+}
+.preco{
+    color: #EC9A36;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.item-footer{
+    display: flex;
+    margin-top: 130px;
+    margin-left: -150px;
+}
+.quandtidadeProd{
+    text-align: center;
+    width: 50px;
+    height: 25px;
+    border: solid 1px #d1bfbf;
+    margin: 0;
+}
+.a{
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: solid 1px #d1bfbf;
+}
+.b{
+    margin: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: solid 1px #d1bfbf;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 70px;
+  }
+  
+  /* Esconder o checkbox padrão */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Criar o checkbox customizado */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #acacac;
+    border-radius: 2px;
+  }
+  
+  /* Adicionar uma cor de fundo cinza ao passar o mouse */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* Quando o checkbox é clicado, adicionar um fundo rosa */
+  .container input:checked ~ .checkmark {
+    background-color: #100f0f;
+  }
+  
+  /* Criar o ícone de check, escondido quando não estiver selecionado */
+  .container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  /* Exibir o ícone quando selecionado */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+#removeButton{
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 130px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.cartPreco{
+    background-color: rgb(238, 236, 236);
+    width: 360px;
+    height: 210px;
+    margin-top: 15px;
+    border-radius: 10px;
+      position: fixed;
+      top: 34.5%;
+      right: 20px; /* Ajuste a posição conforme desejado */
+      padding: 10px;
+}
+  .textCart{
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 1.2rem;
+  }
+
+  .cartPreco button{
+    margin-top: 15px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    width: 360px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1C4C4E;
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .cartPreco h2{
+
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size:1.7rem;
+  }
+
+@media(max-width:800px){
+    .card-produto{
+        display: block;
+    }
+    .produtoInfoConteiner{
+        width: 317px;
+        margin: auto;
+    }
+}
